@@ -53,6 +53,7 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
@@ -66,6 +67,7 @@ import {
     SocialBoostComponent,
     UpdatePublishedComponent,
     VideoTvProofComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,

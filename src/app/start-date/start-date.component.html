@@ -8,7 +8,6 @@
   </button>
 -->
 
-<hr>
   <mat-form-field class="example-full-width">
     <input matInput [min]="minDate" [matDatepicker]="picker" placeholder="Choose a date"
     (dateInput)="addEvent('input', $event)" (dateChange)="addEvent('change', $event)">
