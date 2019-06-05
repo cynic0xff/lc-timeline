@@ -1,13 +1,3 @@
-<!-- {{ message }}
-<mat-form-field class="example-full-width">
-    <input #date matInput placeholder="The date" value="1/1/2019">
-  </mat-form-field>
-  <br>
-  <button mat-raised-button color="primary" matBadgeColor="accent" (click)="updateDeliveryDate(date.value)">
-    Send Data
-  </button>
--->
-
   <mat-form-field class="example-full-width">
     <input matInput [min]="minDate" [matDatepicker]="picker" placeholder="Choose a date"
     (dateInput)="addEvent('input', $event)" (dateChange)="addEvent('change', $event)">

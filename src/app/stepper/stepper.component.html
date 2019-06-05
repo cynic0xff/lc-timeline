@@ -1,5 +1,3 @@
-
-
 <mat-horizontal-stepper linear #stepper>
   <mat-step [stepControl]="firstFormGroup" errorMessage="Date is required.">
     <form [formGroup]="firstFormGroup">
@@ -10,16 +8,40 @@
 
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required.">
+  <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Delivery Dates</ng-template>
-        <app-property-site></app-property-site>
-        <app-brochure-proof></app-brochure-proof>
-        <app-mailer-proof></app-mailer-proof>
-        <app-eblast></app-eblast>
-        <app-social-boost></app-social-boost>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <app-property-site></app-property-site>
+          </div>
+          <div class="col-sm">
+            <app-brochure-proof></app-brochure-proof>
+          </div>
+          <div class="col-sm">
+            <app-mailer-proof></app-mailer-proof>
+          </div>
+          <div class="col-sm">
+            <app-eblast></app-eblast>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-sm">
+          <app-social-boost></app-social-boost>
+        </div>
+        <div class="col-sm">
+          <app-update-published></app-update-published>
+        </div>
+
+      <div class="col-sm">
         <app-update-published></app-update-published>
-        <app-video-tv-proof></app-video-tv-proof>
+      </div>
+      <div class="col-sm">
+        <app-update-published></app-update-published>
+      </div>
+    </div>
+    </div>
     </form>
     <button mat-button matStepperPrevious>Back</button>
     <button mat-button (click)="stepper.reset()">Reset</button>
