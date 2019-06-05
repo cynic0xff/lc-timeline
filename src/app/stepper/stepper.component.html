@@ -1,21 +1,25 @@
+
+
 <mat-horizontal-stepper linear #stepper>
-  <mat-step [stepControl]="firstFormGroup" errorMessage="Name is required.">
+  <mat-step [stepControl]="firstFormGroup" errorMessage="Date is required.">
     <form [formGroup]="firstFormGroup">
-      <ng-template matStepLabel>Fill out your name</ng-template>
-      <mat-form-field>
-        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
-      </mat-form-field>
-      <div>
-        <button mat-button matStepperNext>Next</button>
-      </div>
+      <ng-template matStepLabel>Select a start date</ng-template>
+
+      <app-start-date></app-start-date>
+      <button mat-raised-button matStepperNext color="primary">Calculate delivery</button>
+
     </form>
   </mat-step>
   <mat-step [stepControl]="secondFormGroup" errorMessage="Address is required.">
     <form [formGroup]="secondFormGroup">
-      <ng-template matStepLabel>Fill out your address</ng-template>
-      <mat-form-field>
-        <input matInput placeholder="Address" formControlName="secondCtrl" required>
-      </mat-form-field>
+      <ng-template matStepLabel>Delivery Dates</ng-template>
+        <app-property-site></app-property-site>
+        <app-brochure-proof></app-brochure-proof>
+        <app-mailer-proof></app-mailer-proof>
+        <app-eblast></app-eblast>
+        <app-social-boost></app-social-boost>
+        <app-update-published></app-update-published>
+        <app-video-tv-proof></app-video-tv-proof>
       <div>
         <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
