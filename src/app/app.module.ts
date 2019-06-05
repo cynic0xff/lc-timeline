@@ -58,6 +58,7 @@ import {
 import { NavComponent } from './nav/nav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StepperComponent } from './stepper/stepper.component';
+import { AdvertisementPublishedComponent } from './advertisement-published/advertisement-published.component';
 
 
 @NgModule({
@@ -74,6 +75,7 @@ import { StepperComponent } from './stepper/stepper.component';
     NavComponent,
     DashboardComponent,
     StepperComponent,
+    AdvertisementPublishedComponent,
   ],
   imports: [
     BrowserModule,
