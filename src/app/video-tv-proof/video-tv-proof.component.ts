@@ -11,10 +11,12 @@ const moment = require('moment-business-days');
 export class VideoTvProofComponent implements OnInit {
 
   private _message;
+  dateTo: string = '';
+
   public get message() { return this._message; }
   public set message(value) {
     
-    const daysToAdd = 5;
+    const daysToAdd = 7;
     const daysToSubtract = 0;
   
     let deliveryDate: Moment = moment(value, 'MM-DD-YYYY')
@@ -27,9 +29,6 @@ export class VideoTvProofComponent implements OnInit {
 
   }
 
-  dateTo: string;
-
-  
   constructor(private data: DataService) { 
   
     }
@@ -41,9 +40,10 @@ export class VideoTvProofComponent implements OnInit {
 
     setToDate(deliveryDate: Moment) {
 
-      console.log('Yeeeeaaah ' + deliveryDate);
-      //this.dateTo = deliveryDate.businessAdd(daysToAdd)
-      //.businessSubtract(daysToSubtract)
-      //.format('M/D/YYYY');
+      let tmpToDate: Moment = moment(deliveryDate, 'MM-DD-YYYY')
+        .businessAdd(14)
+        .format('M/D/YYYY');
+      
+      this.dateTo = tmpToDate.toString();
     }
   }
