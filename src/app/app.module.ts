@@ -57,6 +57,7 @@ import {
 } from '@angular/material';
 import { NavComponent } from './nav/nav.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { StepperComponent } from './stepper/stepper.component';
 
 
 @NgModule({
@@ -72,6 +73,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     VideoTvProofComponent,
     NavComponent,
     DashboardComponent,
+    StepperComponent,
   ],
   imports: [
     BrowserModule,

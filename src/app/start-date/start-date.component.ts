@@ -8,29 +8,17 @@ import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
 @Component({
   selector: 'app-start-date',
   templateUrl: './start-date.component.html',
-  styleUrls: ['./start-date.component.css'],
-  providers:[{
-    provide: STEPPER_GLOBAL_OPTIONS, useValue: { showError: true }
-  }]
+  styleUrls: ['./start-date.component.css']
 })
 export class StartDateComponent implements OnInit {
 
   private date: string;
   message: String;
 
-  firstFormGroup: FormGroup;
-  secondFormGroup: FormGroup;
-
-
-  constructor(private data: DataService, public datepipe: DatePipe, private _formBuilder: FormBuilder) { }
+  constructor(private data: DataService, public datepipe: DatePipe) { }
 
   ngOnInit() {
-    this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
-    });
-    this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
-    });
+   
   }
 
   /*sendData(date) {
