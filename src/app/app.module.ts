@@ -16,6 +16,8 @@ import { UpdatePublishedComponent } from './update-published/update-published.co
 import { VideoTvProofComponent } from './video-tv-proof/video-tv-proof.component';
 import { DataService } from './services/data.service';
 import { DatePipe } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import {
   MatAutocompleteModule,
   MatBadgeModule,
@@ -54,6 +56,7 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import { NavComponent } from './nav/nav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -68,6 +71,7 @@ import { NavComponent } from './nav/nav.component';
     UpdatePublishedComponent,
     VideoTvProofComponent,
     NavComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
@@ -116,7 +120,9 @@ import { NavComponent } from './nav/nav.component';
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatTreeModule
+    MatTreeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     DataService,
