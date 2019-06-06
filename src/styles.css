@@ -5,5 +5,5 @@ html, body {
 }
 
 .mcard {
-    background-color: red;
+    min-height: 14rem;
 }
