@@ -4,6 +4,21 @@ html, body {
     margin: 0
 }
 
-.mcard {
-    min-height: 11rem;
+.mat-card-header {
+    margin: 0px;
+}
+.mat-card-header-text {
+    font-size: 1rem;
+    margin: 0px !important;
+}
+.mat-card-title {
+    min-height: 4rem;
+}
+
+.mat-flat-button {
+    width: 100%;
+}
+
+mat-card {
+    margin-bottom: 1rem;
 }
