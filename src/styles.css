@@ -4,14 +4,14 @@ html, body {
     margin: 0
 }
 
-.mat-card-header {
+mat-card-header {
     margin: 0px;
 }
-.mat-card-header-text {
+mat-card-header-text {
     font-size: 1rem;
     margin: 0px !important;
 }
-.mat-card-title {
+mat-card-title {
     min-height: 4rem;
 }
 
@@ -21,4 +21,13 @@ html, body {
 
 mat-card {
     margin-bottom: 1rem;
+}
+
+.mat-card-image {
+    background-color: #eeeeee;
+    width: 8rem !important;
+}
+
+mat-card-subtitle {
+    text-align: center;
 }
