@@ -10,7 +10,7 @@
   <mat-step [stepControl]="secondFormGroup">
     <form [formGroup]="secondFormGroup">
       <ng-template matStepLabel>Delivery Dates</ng-template>
-      <div class="container">
+      <div class="container pt-1">
         <div class="row">
           <div class="col-sm">
             <app-property-site></app-property-site>
@@ -39,10 +39,12 @@
         <app-advertisement-published></app-advertisement-published>
       </div>
     </div>
+    <div class="d-flex justify-content-end">
+      <button mat-raised-button color="primary" (click)="stepper.reset()" color="primary">Done</button>
     </div>
+    </div>
+
     </form>
-    <button mat-button matStepperPrevious>Back</button>
-    <button mat-button (click)="stepper.reset()">Reset</button>
   </mat-step>
 </mat-horizontal-stepper>
 

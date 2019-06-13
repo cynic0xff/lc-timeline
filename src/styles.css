@@ -4,14 +4,10 @@ html, body {
     margin: 0;
 }
 
-mat-card-header {
-    margin: 0px;
-    text-align: center;
-}
-mat-card-header-text {
+.mat-card-header-text {
     font-size: 1rem;
-    margin: 0px !important;
-    text-align: center;
+    text-align: center !important;
+    width: 100%;
 
 }
 mat-card-title {
@@ -35,4 +31,8 @@ mat-card {
 
 mat-card-subtitle {
     text-align: center;
+}
+
+mat-card-content {
+    text-align: center !important;
 }
