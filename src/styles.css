@@ -25,7 +25,7 @@ mat-card {
 
 .mat-card-image {
     background-color: #eeeeee;
-    width: 8rem !important;
+    width: 6rem !important;
 }
 
 mat-card-subtitle {
