@@ -13,7 +13,7 @@ export class MailerProofComponent implements OnInit {
   public get message() { return this._message; }
   public set message(value) {
     
-    const daysToAdd = 2;
+    const daysToAdd = 3;
     const daysToSubtract = 0;
   
     console.log(value);

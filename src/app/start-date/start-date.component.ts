@@ -14,11 +14,12 @@ export class StartDateComponent implements OnInit {
 
   private date: string;
   message: String;
+  minDate: Date = new Date();
 
   constructor(private data: DataService, public datepipe: DatePipe) { }
 
   ngOnInit() {
-   
+   console.log(this.minDate);
   }
 
   /*sendData(date) {

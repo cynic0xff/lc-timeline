@@ -9,12 +9,12 @@ const moment = require('moment-business-days');
 })
 export class AdvertisementPublishedComponent implements OnInit {
 
-  private toDate: string;
+  toDate: string;
   private _message;
   public get message() { return this._message; }
   public set message(value) {
    
-    const daysToAdd = 8;
+    const daysToAdd = 26;
     const daysToSubtract = 0;
 
     console.log(value);

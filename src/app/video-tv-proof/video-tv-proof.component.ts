@@ -9,12 +9,12 @@ const moment = require('moment-business-days');
 })
 export class VideoTvProofComponent implements OnInit {
 
-  private toDate: string;
+  toDate: string;
   private _message;
   public get message() { return this._message; }
   public set message(value) {
    
-    const daysToAdd = 7;
+    const daysToAdd = 15;
     const daysToSubtract = 0;
 
     console.log(value);
