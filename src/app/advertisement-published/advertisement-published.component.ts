@@ -14,7 +14,7 @@ export class AdvertisementPublishedComponent implements OnInit {
   public get message() { return this._message; }
   public set message(value) {
    
-    const daysToAdd = 26;
+    const daysToAdd = 11;
     const daysToSubtract = 0;
 
     console.log(value);
@@ -44,7 +44,7 @@ export class AdvertisementPublishedComponent implements OnInit {
   setToDate(deliveryDate) {
 
     this.toDate = moment(deliveryDate, 'MM-DD-YYYY')
-    .businessAdd(32)
+    .businessAdd(29)
     .format('M/D/YYYY');
   }
 

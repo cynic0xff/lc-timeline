@@ -13,7 +13,7 @@ export class UpdatePublishedComponent implements OnInit {
   public get message() { return this._message; }
   public set message(value) {
     
-    const daysToAdd = 8;
+    const daysToAdd = 5;
     const daysToSubtract = 0;
   
     console.log(value);

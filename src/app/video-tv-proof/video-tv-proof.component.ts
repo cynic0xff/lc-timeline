@@ -14,7 +14,7 @@ export class VideoTvProofComponent implements OnInit {
   public get message() { return this._message; }
   public set message(value) {
    
-    const daysToAdd = 15;
+    const daysToAdd = 7;
     const daysToSubtract = 0;
 
     console.log(value);
@@ -44,7 +44,7 @@ export class VideoTvProofComponent implements OnInit {
   setToDate(deliveryDate) {
 
     this.toDate = moment(deliveryDate, 'MM-DD-YYYY')
-    .businessAdd(14)
+    .businessAdd(15)
     .format('M/D/YYYY');
   }
 

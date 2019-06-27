@@ -13,7 +13,7 @@ export class EblastComponent implements OnInit {
   public get message() { return this._message; }
   public set message(value) {
     
-    const daysToAdd = 3;
+    const daysToAdd = 2;
     const daysToSubtract = 0;
   
     console.log(value);
