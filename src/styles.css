@@ -36,3 +36,8 @@ mat-card-subtitle {
 mat-card-content {
     text-align: center !important;
 }
+
+
+.toggle {
+    height: 2rem;
+}
