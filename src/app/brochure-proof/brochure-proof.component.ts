@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../services/data.service';
+import { Timeline } from '../../class/TimeLine';
 const moment = require('moment-business-days');
 
 @Component({
@@ -13,7 +14,8 @@ export class BrochureProofComponent implements OnInit {
   public get message() { return this._message; }
   public set message(value) {
    
-  const daysToAdd = 1;
+  const tl = new Timeline();
+  const daysToAdd = tl.locations[0].daysToComplete;
   const daysToSubtract = 0;
 
   console.log(value);

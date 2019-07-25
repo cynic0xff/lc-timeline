@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { __asyncDelegator } from 'tslib';
+import { Timeline } from '../../class/TimeLine';
 const moment = require('moment-business-days');
 
 @Component({
@@ -14,7 +15,9 @@ export class PropertySiteComponent implements OnInit {
  public get message() { return this._message; }
  public set message(value) {
    
-    const daysToAdd = 1;
+  const tl = new Timeline();
+
+    const daysToAdd = tl.locations[1].daysToComplete;
     const daysToSubtract = 0;
 
     console.log(value);
