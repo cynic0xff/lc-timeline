@@ -15,12 +15,14 @@ export class PropertySiteComponent implements OnInit {
  public get message() { return this._message; }
  public set message(value) {
    
-  const tl = new Timeline();
+ const tl = new Timeline(); 
 
-    const daysToAdd = tl.locations[1].daysToComplete;
+let daysToAdd = tl.locations.find(i => i.location === 'GLA' && i.module === 'Property Web Site').daysToComplete;
+
+
     const daysToSubtract = 0;
 
-    console.log(value);
+    console.log(`Days to add ${daysToAdd}`);
 
     let deliveryDate = moment(value, 'MM-DD-YYYY')
       .businessAdd(daysToAdd)
